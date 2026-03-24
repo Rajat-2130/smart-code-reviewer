@@ -4,8 +4,11 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(cors())
+const cors = require("cors");
 
+app.use(cors({
+  origin: "*", // later replace with frontend URL
+}));
 
 app.use(express.json())
 
