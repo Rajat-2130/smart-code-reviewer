@@ -6,7 +6,7 @@ const app = express()
 
 
 app.use(cors({
-  origin: "*", // later replace with frontend URL
+  origin: "https://smart-code-reviewer-red.vercel.app/", // later replace with frontend URL
 }));
 
 app.use(express.json())
